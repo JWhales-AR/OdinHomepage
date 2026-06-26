@@ -67,6 +67,7 @@ section ul {
     list-style: none;
 }
 
+#contact-me-socials-container,
 #socials-container {
     padding: 1.5rem 0;
     display: flex;
@@ -119,4 +120,19 @@ section ul {
 
 .project-about-description {
     padding-bottom: 5em;
+}
+
+#contact-me {
+    padding: 1em 2em 3em 2em;
+    background-color: darkcyan;
+    color: white;
+    margin-bottom: 0;
+}
+
+#contact-me p {
+    padding: 0.8em;
+}
+
+#contact-me-picture {
+    width: 100%;
 }

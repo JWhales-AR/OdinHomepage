@@ -1,3 +1,4 @@
+import anwerFullJPG from "./assets/pexels-anwer-ararawi-profile.jpg";
 import "./style.css";
 import SocialsLink from "./socials-buttons.js";
 import ProjectCard from "./project-card.js";
@@ -51,3 +52,22 @@ workContainer.appendChild(ProjectCard(
     "https://example.com",
     "deepskyblue", "white"
 ));
+
+const contactMeSocialsContainer = document.getElementById("contact-me-socials-container");
+contactMeSocialsContainer.appendChild(SocialsLink(
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    "https://github.com"
+));
+
+contactMeSocialsContainer.appendChild(SocialsLink(
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
+    "https://x.com"
+));
+
+contactMeSocialsContainer.appendChild(SocialsLink(
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
+    "https://linkedin.com"
+));
+
+document.getElementById("contact-me-picture")
+    .src = anwerFullJPG;
