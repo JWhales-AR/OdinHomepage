@@ -1,5 +1,5 @@
-/* Mobile: < 500 width */
-/* Tablet (vertical): >= 500 width */
+/* Mobile: < 600 width */
+/* Tablet (vertical): >= 600 width */
 /* Desktop: >= 1080 width */
 
 * {
@@ -16,6 +16,11 @@ input[type="password"],
 textarea,
 button {
     appearance: none;
+}
+
+header {
+    background: url("./assets/pexels-steve-header-bg.jpg") no-repeat;
+    background-size: 130%;
 }
 
 :root {
@@ -154,9 +159,10 @@ footer {
     width: 100%;
 }
 
-@media (width >= 500px) {
+@media (width >= 600px) {
     header {
-        margin: 8rem 3rem 2rem 3rem;
+        padding: 8rem 3rem 2rem 3rem;
+        background-size: cover;
     }
     .header-profile-picture-wrapper {
         float: left;
@@ -166,13 +172,13 @@ footer {
         transform: scale(2);
     }
     .header-profile-name {
+        text-shadow: 1pt 1pt 5pt gray;
         text-wrap: nowrap;
         display: block;
         transform: scale(0.5) translate(-3rem, -10rem);
-        color: black;
     }
     .shadowed-image {
-        box-shadow: 2pt 2pt 5pt gray;
+        box-shadow: 2pt 2pt 15pt -3pt gray;
     }
     section {
         text-align: left;
@@ -181,6 +187,7 @@ footer {
         text-align: justify;
     }
     #about-me {
+        background-color: white;
         box-shadow: 2pt 2pt 5pt gray;
         margin-left: 2em;
         margin-right: 2em;
