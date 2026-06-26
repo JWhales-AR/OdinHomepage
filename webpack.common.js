@@ -8,7 +8,7 @@ export default {
     entry: "./src/index.js",
     output: {
         filename: "index.js",
-        path: resolve(__dirname, "dist"),
+        path: resolve(__dirname, "docs"),
         clean: true,
     },
     plugins: [
