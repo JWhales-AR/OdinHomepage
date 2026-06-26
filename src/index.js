@@ -52,6 +52,14 @@ workContainer.appendChild(ProjectCard(
     "https://example.com",
     "deepskyblue", "white"
 ));
+workContainer.appendChild(ProjectCard(
+    "Project Name ε",
+    `Risus in hendrerit gravida rutrum quisque non tellus orci, ac auctor augue mauris augue neque, gravida in
+    fermentum et, sollicitudin? Aliquam faucibus purus in massa tempor nec feugiat nisl pretium.`,
+    "https://github.com",
+    "https://example.com",
+    "indianred", "white"
+));
 
 const contactMeSocialsContainer = document.getElementById("contact-me-socials-container");
 contactMeSocialsContainer.appendChild(SocialsLink(
