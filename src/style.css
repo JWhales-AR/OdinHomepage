@@ -76,9 +76,6 @@ section ul {
     text-align: center;
 }
 
-#about-me p {
-}
-
 #contact-me-socials-container,
 #socials-container {
     margin-top: 1.5rem;
@@ -141,6 +138,8 @@ section ul {
 }
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
     background-color: darkcyan;
 }
 
@@ -167,14 +166,14 @@ footer {
     }
     #about-me {
         box-shadow: 2pt 2pt 5pt gray;
-        margin-left: 3em;
-        margin-right: 3em;
-    }
-    footer {
-        display: flex;
+        margin-left: 2em;
+        margin-right: 2em;
     }
     #contact-me {
         width: 50%;
+    }
+    #socials-container {
+        justify-content: flex-end;
     }
     #contact-me-socials-container {
         justify-content: flex-start;
