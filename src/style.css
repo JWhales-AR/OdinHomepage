@@ -22,7 +22,7 @@ button {
     --header-height: 45vh;
     --profile-picture-top-offset: 10vw;
     --profile-picture-width: 80%;
-    --section-bottom-margin-common: 3.5rem;
+    --section-bottom-margin-common: calc(10px + 2rem);
 }
 
 header {
@@ -73,10 +73,15 @@ section ul {
 
 #about-me {
     padding: 2em 3em;
+    text-align: center;
+}
+
+#about-me p {
 }
 
 #contact-me-socials-container,
 #socials-container {
+    margin-top: 1.5rem;
     display: flex;
     gap: 2.5rem;
     justify-content: center;
@@ -157,13 +162,13 @@ footer {
     section {
         text-align: left;
     }
+    section p {
+        text-align: justify;
+    }
     #about-me {
         box-shadow: 2pt 2pt 5pt gray;
         margin-left: 3em;
         margin-right: 3em;
-    }
-    #about-me {
-        text-align: center;
     }
     footer {
         display: flex;
@@ -172,7 +177,6 @@ footer {
         width: 50%;
     }
     #contact-me-socials-container {
-        padding: 1.2em 0.8em;
         justify-content: flex-start;
     }
     #contact-me-picture {
