@@ -1,7 +1,12 @@
+import tabletCroppedProfileJPG from "./assets/pexels-anwer-ararawi-profile-crop-tablet.jpg";
+import mobileCroppedProfileJPG from "./assets/pexels-anwer-ararawi-profile-crop-mobile.jpg";
 import anwerFullJPG from "./assets/pexels-anwer-ararawi-profile.jpg";
 import "./style.css";
 import SocialsLink from "./socials-buttons.js";
 import ProjectCard from "./project-card.js";
+
+document.getElementById("profile-picture-tablet-source").srcset = tabletCroppedProfileJPG;
+document.getElementById("profile-picture-mobile-source").src = mobileCroppedProfileJPG;
 
 const socialsContainer = document.getElementById("socials-container");
 socialsContainer.appendChild(SocialsLink(

@@ -25,27 +25,24 @@ button {
     --section-bottom-margin-common: calc(10px + 2rem);
 }
 
-header {
-    background-color: deepskyblue;
-    margin-bottom: calc(var(--profile-picture-top-offset) + 2rem);
+.header-profile-picture-wrapper {
+    max-width: 75%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
 .header-profile-name {
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+    font-size: 3rem;
     color: white;
-    font-size: 48pt;
-    font-weight: bold;
-    padding: 0 0.2em;
+    font-weight: 600;
 }
 
-.header-profile-picture-wrapper {
-    margin: auto;
-    width: var(--profile-picture-width);
-    transform: translateY(var(--profile-picture-top-offset));
-    background: url("./assets/pexels-anwer-ararawi-profile-crop-mobile.jpg") no-repeat;
-    background-size: cover;
-    height: var(--header-height);
-    display: flex;
-    align-items: flex-end;
+.header-profile-picture {
+    width: 100%;
 }
 
 .shadowed-image {
@@ -158,6 +155,25 @@ footer {
 }
 
 @media (width >= 500px) {
+    header {
+        margin: 8rem 3rem 2rem 3rem;
+    }
+    .header-profile-picture-wrapper {
+        float: left;
+        max-width: min(20%, 100px);
+        margin: 2rem 2rem 0.5rem 2rem;
+        transform-origin: bottom right;
+        transform: scale(2);
+    }
+    .header-profile-name {
+        text-wrap: nowrap;
+        display: block;
+        transform: scale(0.5) translate(-3rem, -10rem);
+        color: black;
+    }
+    .shadowed-image {
+        box-shadow: 2pt 2pt 5pt gray;
+    }
     section {
         text-align: left;
     }
