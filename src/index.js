@@ -14,8 +14,8 @@ socialsContainer.appendChild(SocialsLink(
 ));
 
 socialsContainer.appendChild(SocialsLink(
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg",
-    "https://facebook.com"
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
+    "https://linkedin.com"
 ));
           
 const workContainer = document.getElementById("work-container");
