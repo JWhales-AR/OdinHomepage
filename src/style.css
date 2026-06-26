@@ -18,10 +18,7 @@ button {
     --header-height: 45vh;
     --profile-picture-top-offset: 10vw;
     --profile-picture-width: 80%;
-}
-
-body {
-    height: 100vh;
+    --section-bottom-margin-common: 3.5rem;
 }
 
 header {
@@ -51,25 +48,29 @@ header {
     box-shadow: 3pt 4pt 12pt black;
 }
 
-section#about-me {
+section {
     text-align: center;
+    margin-bottom: var(--section-bottom-margin-common);
 }
 
-section#about-me h2 {
+section h2 {
     font-size: 38pt;
 }
 
-section#about-me p {
+section p {
     padding: 0 1rem;
     text-align: left;
     line-height: 1.5em;
+}
+
+section ul {
+    list-style: none;
 }
 
 #socials-container {
     padding: 1.5rem 0;
     display: flex;
     gap: 2.5rem;
-    list-style: none;
     justify-content: center;
 }
 
@@ -77,4 +78,45 @@ section#about-me p {
     display: inline-block;
     width: 2.5rem;
     cursor: pointer;
+}
+
+.project-card {
+    margin: 2rem;
+    box-shadow: 1pt 1pt 5pt gray;
+}
+
+.project-about-header-icon-link {
+    width: 1.5rem;
+}
+
+.project-about-header-line {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.project-about-header-links-list {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.project-screenshot {
+    font-weight: 400;
+    height: 60%;
+    font-size: 24pt;
+    text-align: left;
+    padding: 2em;
+    aspect-ratio: 1.25;
+    display: flex;
+    align-items: center;
+}
+
+.project-about-header-line,
+.project-about-description {
+    padding: 0 1.5em;
+}
+
+.project-about-description {
+    padding-bottom: 5em;
 }
