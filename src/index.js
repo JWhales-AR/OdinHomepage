@@ -1,5 +1,6 @@
 import tabletCroppedProfileJPG from "./assets/pexels-anwer-ararawi-profile-crop-tablet.jpg";
 import mobileCroppedProfileJPG from "./assets/pexels-anwer-ararawi-profile-crop-mobile.jpg";
+import landscapeCroppedJPG from "./assets/pexels-anwer-ararawi-profile-crop-landscape.jpg";
 import anwerFullJPG from "./assets/pexels-anwer-ararawi-profile.jpg";
 import "./style.css";
 import SocialsLink from "./socials-buttons.js";
@@ -84,3 +85,5 @@ contactMeSocialsContainer.appendChild(SocialsLink(
 
 document.getElementById("contact-me-picture")
     .src = anwerFullJPG;
+
+document.getElementById("contact-me-picture-landscape-source").srcset = landscapeCroppedJPG;

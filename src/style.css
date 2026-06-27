@@ -1,6 +1,6 @@
 /* Mobile: < 600 width */
 /* Tablet (vertical): >= 600 width */
-/* Desktop: >= 1080 width */
+/* Desktop: >= 1000 width */
 
 * {
     margin: 0;
@@ -206,5 +206,33 @@ footer {
         padding: 1rem;
         width: 50%;
         height: 100%;
+    }
+}
+
+@media (width >= 900px) {
+    #contact-me {
+        width: 40%;
+        padding: 2.5em;
+    }
+    #contact-me + picture {
+        max-width: 60%;
+        height: 70%;
+    }
+    #socials-container {
+        justify-content: flex-end;
+    }
+    #contact-me-socials-container {
+        justify-content: flex-start;
+    }
+    footer {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #contact-me-picture {
+        width: 100%;
+        padding: 2em;
+        height: 100%;
+        aspect-ratio: 1.5;
     }
 }
