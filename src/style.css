@@ -162,7 +162,7 @@ footer {
 
 @media (width >= 600px) {
     header {
-        padding: 4rem;
+        padding: calc(4rem + 2%);
         background-size: cover;
     }
     .header-profile-picture-wrapper {
@@ -215,7 +215,39 @@ footer {
     }
 }
 
-@media (width >= 900px) {
+@media (width >= 1000px) {
+    header {
+        display: flex;
+        height: 70vh;
+    }
+    .header-profile-picture-wrapper {
+        height: 100%;
+        margin: 0;
+        margin-left: 4rem;
+        transform: none;
+        max-width: unset;
+        transform-origin: right;
+        transform: scale(1.2);
+    }
+    .header-profile-name {
+        left: unset;
+        top: unset;
+        bottom: 0;
+    }
+    .shadowed-image {
+        box-shadow: none;
+    }
+    .header-profile-picture {
+        max-width: unset;
+        width: unset;
+        height: 100%;
+    }
+    #about-me {
+        margin: 0;
+        margin-left: -0.5em;
+        padding: 4em 5em;
+        padding-left: 2em;
+    }
     #contact-me {
         width: 40%;
         padding: 2.5em;
