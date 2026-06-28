@@ -31,6 +31,7 @@ header {
 }
 
 .header-profile-picture-wrapper {
+    padding: 2em;
     max-width: 75%;
     position: relative;
     margin: auto;
@@ -39,8 +40,8 @@ header {
 
 .header-profile-name {
     position: absolute;
-    bottom: 0;
-    left: 0.5rem;
+    bottom: 2.5rem;
+    left: 2.5rem;
     font-size: 2.5rem;
     color: white;
     font-weight: 600;
@@ -161,22 +162,24 @@ footer {
 
 @media (width >= 600px) {
     header {
-        padding: 8rem 3rem 2rem 3rem;
+        padding: 4rem;
         background-size: cover;
     }
     .header-profile-picture-wrapper {
         float: left;
-        max-width: 100px;
-        margin: 2rem 2rem 0.5rem 2rem;
+        max-width: 20%;
+        margin: 1em;
+        margin-top: 2.5em;
+        padding: 0;
         transform-origin: bottom right;
-        transform: scale(2);
+        transform: scale(1.5);
     }
     .header-profile-name {
-        font-size: 3rem;
         text-shadow: 1pt 1pt 5pt gray;
         text-wrap: nowrap;
-        display: block;
-        transform: scale(0.5) translate(-3rem, -10rem);
+        transform: scale(0.8);
+        top: -0.5em;
+        left: 50%;
     }
     .shadowed-image {
         box-shadow: 2pt 2pt 15pt -3pt gray;
