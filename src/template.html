@@ -8,18 +8,18 @@
     </head>
     <body>
         <header>
+            <div class="header-profile-picture-wrapper">
+                <p class="header-profile-name">
+                    Anwar Ararawi
+                </p>
+                <picture>
+                    <source id="profile-picture-tablet-source" srcset=""
+                            media="(min-width: 600px)">
+                    <img id="profile-picture-mobile-source"
+                         class="shadowed-image header-profile-picture" src="">
+                </picture>
+            </div>
             <section id="about-me">
-                <div class="header-profile-picture-wrapper">
-                    <p class="header-profile-name">
-                        Anwar Ararawi
-                    </p>
-                    <picture>
-                        <source id="profile-picture-tablet-source" srcset=""
-                                media="(min-width: 600px)">
-                        <img id="profile-picture-mobile-source"
-                             class="shadowed-image header-profile-picture" src="">
-                    </picture>
-                </div>
                 <h2>About Me</h2>
                 <p>
                     Id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et
@@ -54,7 +54,11 @@
                 </p>
                 <ul id="contact-me-socials-container"></ul>
             </section>
-            <img id="contact-me-picture" alt="" src="">
+            <picture class="contact-me-picture-container">
+                <source id="contact-me-picture-landscape-source" srcset=""
+                        media="(min-width: 900px)">
+                <img id="contact-me-picture" class="contact-me-picture" src="">
+            </picture>
         </footer>
     </body>
 </html>
