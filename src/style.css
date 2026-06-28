@@ -248,6 +248,13 @@ footer {
         padding: 4em 5em;
         padding-left: 2em;
     }
+    #my-work {
+        padding: 0 10%;
+        margin-top: 2em;
+    }
+    #work-container {
+        grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+    }
     #contact-me {
         width: 40%;
         padding: 2.5em;
