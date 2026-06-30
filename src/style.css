@@ -188,9 +188,9 @@ footer {
     .header-profile-name {
         text-shadow: 1pt 1pt 5pt gray;
         text-wrap: nowrap;
-        transform: scale(0.8);
-        top: -10%;
-        left: 50%;
+        top: 0;
+        font-size: 1.5rem;
+        left: 70%
     }
     .shadowed-image {
         box-shadow: 2pt 2pt 15pt -3pt gray;
