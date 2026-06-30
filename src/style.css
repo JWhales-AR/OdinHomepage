@@ -168,8 +168,8 @@ footer {
     .header-profile-picture-wrapper {
         float: left;
         max-width: 20%;
-        margin: 1em;
-        margin-top: 2.5em;
+        margin: 2.5em;
+        margin-bottom: 0;
         padding: 0;
         transform-origin: bottom right;
         transform: scale(1.5);
@@ -178,7 +178,7 @@ footer {
         text-shadow: 1pt 1pt 5pt gray;
         text-wrap: nowrap;
         transform: scale(0.8);
-        top: -0.5em;
+        top: -10%;
         left: 50%;
     }
     .shadowed-image {
@@ -193,8 +193,6 @@ footer {
     #about-me {
         background-color: white;
         box-shadow: 2pt 2pt 5pt gray;
-        margin-left: 2em;
-        margin-right: 2em;
     }
     #contact-me {
         width: 50%;
