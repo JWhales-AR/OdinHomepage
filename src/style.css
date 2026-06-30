@@ -18,6 +18,17 @@ button {
     appearance: none;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body > * {
+    max-width: 90em;
+}
+
 header {
     background: url("./assets/pexels-steve-header-bg.jpg") no-repeat;
     background-size: 130%;
@@ -216,7 +227,7 @@ footer {
 @media (width >= 1000px) {
     header {
         display: flex;
-        height: 70vh;
+        height: min(70vh, 650px);
     }
     .header-profile-picture-wrapper {
         height: 100%;
